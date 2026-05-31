@@ -1,4 +1,4 @@
-// Reto 1
+// Reto 1: Modifique el árbol fractal para que cada rama genere tres ramas: una izquierda, una central y una derecha.
 
 #include <stdio.h>
 #include "turtlec.h"
