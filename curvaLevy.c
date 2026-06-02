@@ -27,16 +27,16 @@ int main(void){
     printf("Ingresa profundidad: ");
     scanf("%d", &depth);
 
-    TurtleApp *app = turtleAppCreate(700, 700, "curva de Levy C");
+    TurtleApp *app = turtleAppCreate(700, 600, "curva de Levy C");
 
     if(app == NULL)
         return 1;
 
     Turtle *t = turtleAppGetTurtle(app);
 
-    //turtlePenUp(t);
-    //turtleGoTo(t, 350, 650);
-    //turtlePenDown(t);
+    turtlePenUp(t);
+    turtleGoTo(t, 220, 500);
+    turtlePenDown(t);
 
     //turtleLeft(t, 90);
     levy(t, length, depth);

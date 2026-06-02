@@ -42,7 +42,7 @@ int main(void){
     Turtle *t = turtleAppGetTurtle(app);
 
     turtlePenUp(t);
-    turtleGoTo(t, 200, 550);
+    turtleGoTo(t, 400, 550);
     turtlePenDown(t);
 
     //turtleLeft(t, 90);
