@@ -3,6 +3,8 @@ fractalTreeVar
 curvaLevy
 reto1
 reto2
+reto3
+reto4
 testLine
 *.o
 *.out

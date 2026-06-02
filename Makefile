@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -std=c11 -I.
 LDLIBS = -lcsfml-graphics -lcsfml-window -lcsfml-system -lm
 
 SRC = turtlec.c
-PROGRAMS = fractalTree fractalTreeVar curvaLevy reto1 reto2 testLine
+PROGRAMS = fractalTree fractalTreeVar curvaLevy reto1 reto2 reto3 testLine
 
 all: $(PROGRAMS)
 
@@ -21,6 +21,8 @@ reto1: reto1.c $(SRC) turtlec.h
 
 reto2: reto2.c $(SRC) turtlec.h
 	$(CC) $(CFLAGS) $(SRC) reto2.c -o reto2 $(LDLIBS)
+reto3: reto3.c $(SRC) turtlec.h
+	$(CC) $(CFLAGS) $(SRC) reto3.c -o reto3 $(LDLIBS)
 
 testLine: testLine.c $(SRC) turtlec.h
 	$(CC) $(CFLAGS) $(SRC) testLine.c -o testLine $(LDLIBS)
