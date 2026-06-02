@@ -1,4 +1,4 @@
-//Actividad 2: Modifique el árbol fractal para que la rama izquierda y la rama derecha tengan tamaños diferentes.
+//Reto 2: Modifique el árbol fractal para que la rama izquierda y la rama derecha tengan tamaños diferentes.
 
 #include <stdio.h>
 #include "turtlec.h"

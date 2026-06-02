@@ -1,14 +1,16 @@
+//Reto 3: Modifique el arbol fractal para que el color dependa de la profundidad.
+
 #include <stdio.h>
 #include "turtlec.h"
 
 void fractalTree(Turtle *turtle, float length, int depth, float angle, float factor) {
     if(depth == 0 || length < 5)
         return;
-    uint8_t r = (depth * 50) > 255 ? 255 : depth * 50;   
-    uint8_t g = (depth * 30) > 255 ? 255 : depth * 30;
-    uint8_t b = (depth * 20) > 255 ? 255 : depth * 20;
+
+    uint8_t r = (depth * 50) % 256;  
+    uint8_t g = (depth * 30) % 256;
+    uint8_t b = (depth * 20) % 256; 
     turtleSetColor(turtle, r, g, b);
-    //turtleSetColor(turtle, (depth * 4) % 256, (depth * 3) % 256, (depth * 2) % 256);
 
     turtleForward(turtle, length);
 
